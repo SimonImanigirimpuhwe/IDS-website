@@ -2,10 +2,10 @@ import React from 'react';
 
 const Card = ({img, title, content}) => {
     return ( 
-        <div className="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex flex-col">
+        <div className="max-w-xs mx-auto bg-white rounded-xl shadow-xl flex flex-col">
           {img && <img src={img} alt={`${title} card`} />}
-          <h3 className="self-center text-secondary">{title}</h3>
-          <p>{content}</p>
+          <h3 className="self-center text-secondary py-2">{title}</h3>
+          <p className="p-4">{content}</p>
       </div> 
      );
 }
