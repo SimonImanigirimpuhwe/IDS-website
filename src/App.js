@@ -38,10 +38,10 @@ function App() {
         <div>
           <h1 className="text-center uppercase py-5 pt-10 font-bold">services</h1>
           <div className="bg-service-fluid bg-contain bg-no-repeat bg-right h-4/6 py-8">
-              <div className="mb-12"> 
+              <div className="mb-12 pl-12 pr-12"> 
                 <Carousel 
                   arrowLeft={<FloatBtn bgColor="tertiary" arrow={PrevBtn}/>}
-                  arrowRight={<FloatBtn bgColor="primary"/>}
+                  arrowRight={<FloatBtn bgColor="tertiary"/>}
                   data={services}
                 />
               </div>
