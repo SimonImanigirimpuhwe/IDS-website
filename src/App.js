@@ -17,14 +17,14 @@ function App() {
       <div className="bg-hero-fluid sm:bg-contain sm:bg-no-repeat bg-cover  h-screen flex flex-col">
         <Header />
         <div className="flex md:flex-row flex-col items-center px-12 mt-12">
-           <div className="text-white">
+           <div className="text-white pr-12">
               <h1 className="font-bold pb-4 text-2xl">Welcome to Iraguha Digital Services!</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               <div className="mt-12 mb-3">
                 <Button title="Learn more about" bgColor="secondary" width={"2/5"}/>
               </div>
            </div>
-           <div>
+           <div className="mt-10">
               <img src={HeroImage} alt="hero-img" />
            </div>
         </div>
@@ -35,8 +35,8 @@ function App() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna amo.</p><br/>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div>
-          <h1 className="text-center uppercase py-5 pt-10 font-bold">services</h1>
+        <div className="mt-5">
+          <h1 className="text-center uppercase py-5 pt-20 mt-5 font-bold">services</h1>
           <div className="bg-service-fluid bg-contain bg-no-repeat bg-right h-4/6 py-8">
               <div className="mb-12 pl-12 pr-12"> 
                 <Carousel 
@@ -46,7 +46,7 @@ function App() {
                 />
               </div>
           </div>
-          <div className="flex flex-col justify-center items-center mb-8 pl-12 pr-12">
+          <div className="flex flex-col justify-center items-center mb-8 pl-12 pr-12 pt-20 mt-5">
             <h1 className="text-center uppercase py-5 pt-10 font-bold">Contact us</h1>
             <div className="self-center">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>

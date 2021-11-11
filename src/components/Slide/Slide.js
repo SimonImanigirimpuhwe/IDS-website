@@ -19,7 +19,7 @@ const Slides = ({arrowLeft, arrowRight, data }) => {
             {
                 resolve: slidesToShowPlugin,
                 options: {
-                 numberOfSlides: data.length > 2 ? 2 : data.length,
+                 numberOfSlides: data.length > 3 ? 3 : data.length,
                 },
               },
             {
