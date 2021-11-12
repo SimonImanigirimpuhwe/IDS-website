@@ -1,9 +1,11 @@
 import React from 'react';
+import {animateScroll as scroll} from "react-scroll";
 import Button from './components/Button';
 import FloatBtn from './components/FloatBtn';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import PrevBtn from "./assets/icons/previous.svg";
+import UpBtn from "./assets/icons/up.svg";
 import { Carousel } from './components/Slide';
 import services from "./constants";
 import PhoneIcon from "./assets/icons/phone.svg";
@@ -30,7 +32,7 @@ function App() {
         </div>
       </div>
       <main className="pb-8">
-        <div className="p-12">
+        <div className="p-12" id="about">
           <h1 className="text-center uppercase py-10 font-bold">About iraguha digital services</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna amo.</p><br/>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -46,7 +48,7 @@ function App() {
                 />
               </div>
           </div>
-          <div className="flex flex-col justify-center items-center mb-8 pl-12 pr-12 pt-20 mt-5">
+          <div className="flex flex-col justify-center items-center mb-8 pl-12 pr-12 pt-20 mt-5" id="contact">
             <h1 className="text-center uppercase py-5 pt-10 font-bold">Contact us</h1>
             <div className="self-center">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
@@ -62,6 +64,9 @@ function App() {
           </div>
         </div>
       </main>
+      <div className="fixed bottom-5 right-5 rotate-90" onClick={() => scroll.scrollToTop()}>
+      <FloatBtn bgColor="primary" arrow={UpBtn}/>
+      </div>
       <Footer />
     </div>
   );
